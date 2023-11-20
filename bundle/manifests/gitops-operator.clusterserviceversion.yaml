@@ -955,6 +955,8 @@ spec:
                   readOnly: true
               securityContext:
                 runAsNonRoot: true
+                seccompProfile:
+                  type: RuntimeDefault
               serviceAccountName: openshift-gitops-operator-controller-manager
               terminationGracePeriodSeconds: 10
               volumes:
